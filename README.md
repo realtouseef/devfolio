@@ -6,7 +6,7 @@ A minimal and easy-to-tweak portfolio for developers made with [TailwindCSS](htt
 
 ## Make it yours
 
-Just change `src/portfolio.js` to get your personal portfolio. Customize portfolio theme by using your own color scheme globally in the `src/_globalColor.scss` file. Feel free to use it as-is or personalize it as much as you want.
+Just change `src/portfolio.js` to get your personal portfolio. Customize portfolio theme by using your own color scheme globally in the `n/a` file. Feel free to use it as-is or personalize it as much as you want.
 
 ## For Contribution
 
