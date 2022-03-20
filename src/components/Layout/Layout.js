@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
         <meta name="description" content={description} />
         <meta name="language" content={language} />
       </Head>
-      <main className="max-w-4xl mx-auto">
+      <main className="max-w-4xl mx-auto px-4">
         <Navbar />
         {children}
         <Footer />
