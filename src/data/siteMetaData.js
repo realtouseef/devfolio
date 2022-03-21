@@ -5,7 +5,6 @@ const siteMetaData = {
   language: "en-us",
   siteUrl: "",
   siteRepo: "https://github.com/realtouseef/devfolio.git",
-  image: "",
   email: "touseef69r@gmail.com",
   github: "https://www.github.com/realtouseef",
   facebook: "https://www.facebook.com/twsxf",
