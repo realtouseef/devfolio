@@ -1,5 +1,5 @@
-import Image from "next/image";
-import me from "../../data/images/me.jpg";
+import Image from "../../data/customImage";
+import me from "../../data/images/mee.jpg";
 
 const ProfileCard = () => {
   return (
@@ -8,13 +8,12 @@ const ProfileCard = () => {
         <Image
           src={me}
           alt="me"
-          className="object-cover object-center lg:h-48 md:h-36"
-          width={544}
-          height={306}
-          // layout="fixed"
+          width={620}
+          height={800}
+          className="rounded-l-lg object-center object-cover"
           loading="lazy"
         />
-        <article className="px-12 py-8 text-lg">
+        <article className="px-10 py-8 text-lg font-medium">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and

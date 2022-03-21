@@ -1,6 +1,7 @@
 const siteMetaData = {
   title: "DevFolio",
   description: "For Developers, By a Developer",
+  author: "Touseef",
   headerTitle: "DevFolio",
   language: "en-us",
   siteUrl: "",
