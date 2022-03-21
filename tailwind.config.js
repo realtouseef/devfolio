@@ -9,6 +9,7 @@ module.exports = {
         "primary-light-color": "var(--primary-light-color)",
         "secondary-light-color": "var(--secondary-light-color)",
         "button-light-color": "var(--button-light-color)",
+        "button-light-hover-color": "var(--button-light-hover-color)",
         "text-light-color": "var(--text-light-color)",
         "muted-light-color": "var(--muted-light-color)",
       },
