@@ -10,7 +10,11 @@ const Navbar = () => {
       <center className="flex items-center justify-center">
         {NavItems &&
           NavItems.map(({ href, title }) => (
-            <Link key={title} href={href}>
+            <Link
+              key={title}
+              href={href}
+              className="mr-3 last:mr-0 hover:text-button-light-color"
+            >
               {title}
             </Link>
           ))}

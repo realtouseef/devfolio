@@ -12,7 +12,7 @@ const CustomLink = ({ href, ...rest }) => {
   if (isInternal) {
     return (
       <Link href={href}>
-        <a className="mr-3 hover:text-button-light-color" {...rest} />
+        <a {...rest} />
       </Link>
     );
   }
