@@ -41,10 +41,6 @@ yarn dev
 
 ## Inspired from
 
--- Idea inspired from
+- Idea inspired from - [DeveloperFolio](https://github.com/saadpasta/developerFolio)
 
-- [DeveloperFolio](https://github.com/saadpasta/developerFolio)
-
--- Design inspired from
-
-- [CodeWithAhsan](https://github.com/AhsanAyaz/code-with-ahsan)
+- Design inspired from - [CodeWithAhsan](https://github.com/AhsanAyaz/code-with-ahsan)
