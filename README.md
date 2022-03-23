@@ -4,9 +4,11 @@
 
 A minimal and easy-to-tweak portfolio for developers made with [TailwindCSS](https://www.tailwindcss.com) and [NextJS](https://nextjs.org/). The best thing is, someone with a basic know-how of TailwindCSS and NextJS will be able to tweak it according to their needs.
 
-## Make it yours
+## Add your Info
 
-Just change `src/portfolio.js` to get your personal portfolio. Customize portfolio theme by using your own color scheme globally in the `n/a` file. Feel free to use it as-is or personalize it as much as you want.
+- Add your bio in `src/components/Card/ProfileCard.js`.
+- Add/remove items in `navbar` from `src/components/Nav/NavItems.js`
+- Add your data in `src/data/siteMetaData.js`
 
 ## For Contribution
 

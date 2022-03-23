@@ -1,4 +1,4 @@
-import Image from "../../data/customImage";
+import Image from "../../data/custom/customImage";
 import me from "../../data/images/mee.jpg";
 
 const ProfileCard = () => {

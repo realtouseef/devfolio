@@ -1,5 +1,5 @@
 import { NavItems } from "./NavItems";
-import Link from "../../data/customLink";
+import Link from "../../data/custom/customLink";
 
 const Navbar = () => {
   const customBtn =

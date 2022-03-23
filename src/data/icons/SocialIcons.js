@@ -6,7 +6,7 @@ import github from "./github.svg";
 import twitch from "./twitch.svg";
 import mail from "./mail.svg";
 
-import siteMetaData from "../../data/siteMetaData";
+import siteMetaData from "../siteMetaData";
 
 export const SocialIcons = [
   {
