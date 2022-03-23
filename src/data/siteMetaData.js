@@ -13,6 +13,7 @@ const siteMetaData = {
   linkedin: "https://www.linkedin.com/in/touseefcodes",
   youtube: "",
   twitch: "",
+  upwork: "https://www.upwork.com/freelancers/~013c6a875bcebb5f00",
   locale: "en-Us",
 };
 

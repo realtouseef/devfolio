@@ -9,6 +9,8 @@ A minimal and easy-to-tweak portfolio for developers made with [TailwindCSS](htt
 - Add your bio in `src/components/Card/ProfileCard.js`.
 - Add/remove items in `navbar` from `src/components/Nav/NavItems.js`
 - Add your data in `src/data/siteMetaData.js`
+- Add your custom colors to `tailwind.config.js` and `src/styles/globals.css`
+  PS: don't change the color names, if you want to then change them other places as well
 
 ## For Contribution
 
@@ -44,3 +46,7 @@ yarn dev
 - Idea inspired from - [DeveloperFolio](https://github.com/saadpasta/developerFolio)
 
 - Design inspired from - [CodeWithAhsan](https://github.com/AhsanAyaz/code-with-ahsan)
+
+## 🙏 Support
+
+This project needs a ⭐️ from you. Don't forget to leave a star ⭐️

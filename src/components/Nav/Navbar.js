@@ -16,6 +16,8 @@ const Navbar = () => {
             <Link
               key={title}
               href={href}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`${
                 href.includes("https" || "http")
                   ? customBtn
