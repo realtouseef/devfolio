@@ -15,7 +15,7 @@ This page is not yet deployed.
 - [How to Use](#how-to-use)
 - [Technologies Used](#technologies-used)
 - [Inspired from](#inspired-from)
-- [Support](#support)
+- [Support](#-support)
 
 ## Add your Info
 
