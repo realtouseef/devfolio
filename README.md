@@ -4,6 +4,19 @@
 
 A minimal and easy-to-tweak portfolio for developers made with [TailwindCSS](https://www.tailwindcss.com) and [NextJS](https://nextjs.org/). The best thing is, someone with a basic know-how of TailwindCSS and NextJS will be able to tweak it according to their needs.
 
+## Live Version
+
+This page is not yet deployed.
+
+## Table of Contents
+
+- [Add your Info](#add-your-info)
+- [For Contribution](#for-contribution)
+- [How to Use](#how-to-use)
+- [Technologies Used](#technologies-used)
+- [Inspired from](#inspired-from)
+- [Support](#support)
+
 ## Add your Info
 
 - Add your bio in `src/components/Card/ProfileCard.js`.
