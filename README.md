@@ -14,6 +14,7 @@ This page is not yet deployed.
 - [For Contribution](#for-contribution)
 - [How to Use](#how-to-use)
 - [Technologies Used](#technologies-used)
+- [Fonts And Icons](#fonts-and-icons)
 - [Inspired from](#inspired-from)
 - [Support](#-support)
 
@@ -53,6 +54,12 @@ yarn dev
 
 - [NextJS](https://nextjs.org/)
 - [TailwindCSS](https://www.tailwindcss.com)
+
+## Font and Icons
+
+- Fonts are taken from -- [Google Fonts](https://fonts.google.com)
+
+- SVGs are taken from -- [Font Awesome](https://fontawesome.com/)
 
 ## Inspired from
 

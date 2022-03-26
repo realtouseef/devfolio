@@ -6,13 +6,19 @@
 
 :root {
   --primary-light-color: #fff;
-  --secondary-light-color: #f5f5f5;
+  --secondary-light-color: #eeeded;
   --button-light-color: #6366f1;
-  --button-light-hover-color: #5255f1;
+  --button-light-hover-color: #3134d4;
   --text-light-color: #404040;
   --muted-light-color: #a2a2a2;
 }
 
 * {
   font-family: "Montserrat", sans-serif;
+}
+
+@layer components {
+  .btn {
+    @apply cursor-pointer rounded-lg py-2 px-5 text-base font-medium tracking-wider text-white transition-all duration-300;
+  }
 }
