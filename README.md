@@ -14,7 +14,7 @@ This page is not yet deployed.
 - [For Contribution](#for-contribution)
 - [How to Use](#how-to-use)
 - [Technologies Used](#technologies-used)
-- [Fonts And Icons](#fonts-and-icons)
+- [Fonts And Icons](#font-and-icons)
 - [Inspired from](#inspired-from)
 - [Support](#-support)
 
