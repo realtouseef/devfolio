@@ -1,8 +1,7 @@
 import Image from "../../data/custom/customImage";
-// import me from "../../data/images/mee.jpg";
-import Touseef from "../../data/images/touseef.jpg";
-import Linkedin from "../../data/icons/linkedin.svg";
-import GitHub from "../../data/icons/github.svg";
+import Touseef from "../../data/assets/images/touseef.jpg";
+import Linkedin from "../../data/assets/social/linkedin.svg";
+import GitHub from "../../data/assets/social/github.svg";
 // import Link from "../../data/custom/AnchorLink";
 
 const ProfileCard = () => {
@@ -17,7 +16,7 @@ const ProfileCard = () => {
             loading="lazy"
           />
         </figure>
-        <article className="space-y-4 px-4 py-4 text-left text-lg font-medium leading-relaxed tracking-wide sm:py-5 md:w-2/3 md:py-0 md:px-8 md:leading-none">
+        <article className="sm:py-5 space-y-4 px-4 py-4 text-left text-lg font-medium leading-relaxed tracking-wide md:w-2/3 md:py-0 md:px-8 md:leading-none">
           <div>
             <h2 className="mb-2 text-2xl font-bold">Touseef ibn Khaleel</h2>
             <h4 className="text-sm text-muted-light-color md:text-base">

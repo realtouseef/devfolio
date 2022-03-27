@@ -21,4 +21,8 @@
   .btn {
     @apply cursor-pointer rounded-lg py-2 px-5 text-base font-medium tracking-wider text-white transition-all duration-300;
   }
+
+  .outlinedBtn {
+    @apply p-4 mr-3 hover:text-white text-sm tracking-wider outline-button-light-color ring-2 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-button-light-color focus-visible:ring-offset-2 hover:bg-button-light-color hover:outline-none hover:ring-0 transition-all duration-200
+  }
 }

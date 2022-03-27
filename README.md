@@ -25,6 +25,7 @@ This page is not yet deployed.
 - Add your data in `src/data/siteMetaData.js`
 - Add your custom colors to `tailwind.config.js` and `src/styles/globals.css`
   PS: don't change the color names, if you want to then change them other places as well
+- Import your favorite font from `fonts.google.com` in `src/styles/globals.css`
 
 ## For Contribution
 
