@@ -1,5 +1,6 @@
 import Image from "../../data/custom/customImage";
-import me from "../../data/images/mee.jpg";
+// import me from "../../data/images/mee.jpg";
+import Touseef from "../../data/images/touseef.jpg";
 import Linkedin from "../../data/icons/linkedin.svg";
 import GitHub from "../../data/icons/github.svg";
 // import Link from "../../data/custom/AnchorLink";
@@ -8,9 +9,9 @@ const ProfileCard = () => {
   return (
     <main>
       <center className="mx-auto w-96 overflow-hidden rounded-lg bg-secondary-light-color md:mx-0 md:flex md:h-96 md:w-full md:items-center md:justify-center md:text-left">
-        <figure className="md:h-[400px] md:w-1/3">
+        <figure className="md:w-[350px]">
           <Image
-            src={me}
+            src={Touseef}
             alt="me"
             className="rounded-t-lg object-cover md:rounded-none md:rounded-l-lg"
             loading="lazy"

@@ -14,6 +14,9 @@ module.exports = {
         "muted-light-color": "var(--muted-light-color)",
       },
     },
+    screens: {
+      md: "780px",
+    },
   },
   plugins: [],
 };
