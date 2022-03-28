@@ -24,7 +24,7 @@ This page is not yet deployed.
 - Add/remove items in `navbar` from `src/components/Nav/NavItems.js`
 - Add your data in `src/data/siteMetaData.js`
 - Add your custom colors to `tailwind.config.js` and `src/styles/globals.css`
-  PS: don't change the color names, if you want to then change them other places as well
+  PS: don't change the color names, if you want to then change them at other places as well
 - Import your favorite font from `fonts.google.com` in `src/styles/globals.css`
 
 ## For Contribution
