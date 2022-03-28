@@ -6,7 +6,7 @@ import GitHub from "../../data/assets/social/github.svg";
 
 const ProfileCard = () => {
   return (
-    <main>
+    <main className="mb-10">
       <center className="mx-auto w-96 overflow-hidden rounded-lg bg-secondary-light-color md:mx-0 md:flex md:h-96 md:w-full md:items-center md:justify-center md:text-left">
         <figure className="md:w-[350px]">
           <Image

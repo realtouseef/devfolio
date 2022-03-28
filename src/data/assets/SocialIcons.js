@@ -1,54 +1,39 @@
-import facebook from "./facebook.svg";
-import twitter from "./twitter.svg";
-import youtube from "./youtube.svg";
-import linkedin from "./linkedin.svg";
-import github from "./github.svg";
-import twitch from "./twitch.svg";
-import mail from "./mail.svg";
+import Facebook from "./social/facebook.svg";
+import Twitter from "./social/twitter.svg";
+import Youtube from "./social/youtube.svg";
+import Linkedin from "./social/linkedin.svg";
+import Github from "./social/github.svg";
+import Twitch from "./social/twitch.svg";
+import Upwork from "./social/upwork.svg";
+import Mail from "./social/mail.svg";
 
-import siteMetaData from "../siteMetaData";
+const icons = {
+  facebook: Facebook,
+  twitter: Twitter,
+  youtube: Youtube,
+  linkedin: Linkedin,
+  github: Github,
+  twitch: Twitch,
+  upwork: Upwork,
+  mail: Mail,
+};
 
-export const SocialIcons = [
-  {
-    kind: "facebook",
-    href: siteMetaData.facebook,
-    size: "24",
-    icon: facebook,
-  },
-  {
-    kind: "twitter",
-    href: siteMetaData.twitter,
-    size: "24",
-    icon: twitter,
-  },
-  {
-    kind: "youtube",
-    href: siteMetaData.youtube,
-    size: "24",
-    icon: youtube,
-  },
-  {
-    kind: "github",
-    href: siteMetaData.github,
-    size: "24",
-    icon: github,
-  },
-  {
-    kind: "linkedin",
-    href: siteMetaData.linkedin,
-    size: "24",
-    icon: linkedin,
-  },
-  {
-    kind: "twitch",
-    href: siteMetaData.twitch,
-    size: "24",
-    icon: twitch,
-  },
-  {
-    kind: "mail",
-    href: siteMetaData.email,
-    size: "24",
-    icon: mail,
-  },
-];
+export const SocialIcons = ({
+  kind,
+  href,
+  size = 32,
+  color = "text-pink-500",
+}) => {
+  if (!href) return null;
+
+  const IconSvg = icons[kind];
+
+  return (
+    <a target="_blank" rel="noopener noreferrer" href={href}>
+      <IconSvg
+        style={{ width: size, height: size }}
+        className={`fill-current ${color} hover:text-button-light-color `}
+      />
+    </a>
+  );
+};

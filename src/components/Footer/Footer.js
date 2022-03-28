@@ -1,14 +1,40 @@
-import { SocialIcons } from "../icons/SocialIcons";
+import { SocialIcons } from "../../data/assets/SocialIcons";
+import siteMetaData from "../../data/siteMetaData";
 
 const Footer = () => {
+  const {
+    facebook,
+    twitter,
+    twitch,
+    youtube,
+    linkedin,
+    github,
+    email,
+    upwork,
+    author,
+    title,
+  } = siteMetaData;
+
   return (
-    <footer>
-      footer
-      {SocialIcons.map((i) => (
-        <a href={i.href}>
-          <img style={{ width: i.size, height: i.size }} src={i.icon} />
-        </a>
-      ))}
+    <footer className="space-y-5 text-center tracking-wider">
+      <p className="mb-6 font-bold text-muted-light-color">Let's connect</p>
+      <main className="flex items-center justify-center space-x-5">
+        <SocialIcons href={upwork} kind="upwork" />
+        <SocialIcons href={facebook} kind="facebook" />
+        <SocialIcons href={youtube} kind="youtube" />
+        <SocialIcons href={twitter} kind="twitter" />
+        <SocialIcons href={twitch} kind="twitch" />
+        <SocialIcons href={linkedin} kind="linkedin" />
+        <SocialIcons href={github} kind="github" />
+        <SocialIcons href={`mailto:${email}`} kind="mail" />
+      </main>
+      <article className="flex items-center justify-center space-x-4 text-sm font-medium text-muted-light-color">
+        <aside>{author}</aside>
+        <div>{` • `}</div>
+        <div>{`© ${new Date().getFullYear()}`}</div>
+        <div>{` • `}</div>
+        <aside>{title}</aside>
+      </article>
     </footer>
   );
 };
