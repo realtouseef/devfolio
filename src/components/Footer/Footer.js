@@ -16,7 +16,7 @@ const Footer = () => {
   } = siteMetaData;
 
   return (
-    <footer className="my-4 space-y-5 text-center tracking-wider">
+    <footer className="my-4 mt-10 space-y-5 text-center tracking-wider">
       <p className="font-bold text-muted-light-color">Let's connect</p>
       <main className="flex items-center justify-center space-x-5">
         <SocialIcons href={upwork} kind="upwork" />

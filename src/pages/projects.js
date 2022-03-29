@@ -1,5 +1,6 @@
 import Layout from "../components/Layout/Layout";
 import { useState, useEffect } from "react";
+import Star from "../data/assets/site-icons/star.svg";
 
 const projects = () => {
   const [projects, setProjects] = useState([]);
@@ -18,10 +19,9 @@ const projects = () => {
 
   return (
     <Layout>
-      <h1 className="text-3xl font-bold">
+      <h1 className="border-b-2 text-3xl font-bold">
         Projects: <span className="font-medium">{projects.length}</span>
       </h1>
-      <hr />
       {projects &&
         projects.map(
           ({
@@ -29,23 +29,37 @@ const projects = () => {
             html_url,
             name,
             description,
-            homepage,
             stargazers_count,
             language,
+            fork,
           }) => {
             return (
-              <main key={id} className="mt-6">
+              <main key={id} className="mx-auto my-4 max-w-xl">
                 <a
                   target="_blank"
                   href={html_url}
-                  className="grid grid-cols-2 rounded-lg border-2 py-4 px-8 hover:border-button-light-color"
+                  className="flex rounded-lg border-2 py-4 px-8 hover:border-button-light-color"
                 >
-                  <div>
-                    <a className="text-lg font-medium">{name}</a>
+                  <div className="space-y-2">
+                    <a className="text-xl font-bold tracking-wide">{name}</a>
                     <p>{description}</p>
-                    <p>Homepage: {homepage}</p>
-                    <p>Made with: {language}</p>
-                    <p>Stars: {stargazers_count}</p>
+                    <p className="text-muted-light-color">
+                      Made with:{" "}
+                      <span className="font-medium text-text-light-color">
+                        {language ? language : "N/A"}
+                      </span>
+                    </p>
+                    <div className="flex items-center space-x-2">
+                      <p className="flex w-max items-center space-x-2 rounded-md bg-secondary-light-color px-3 py-1 text-muted-light-color ">
+                        <Star style={{ width: 14, marginBottom: 1 }} />
+                        <span className="font-medium text-text-light-color">
+                          {stargazers_count}
+                        </span>
+                      </p>
+                      <p className="font-medium tracking-wide text-button-light-color">
+                        {fork ? "forked" : ""}
+                      </p>
+                    </div>
                   </div>
                 </a>
               </main>
