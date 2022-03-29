@@ -12,9 +12,9 @@ const Layout = ({ children }) => {
         <meta name="description" content={description} />
         <meta name="language" content={language} />
       </Head>
-      <main className="mx-auto max-w-5xl px-4">
+      <main className="flex flex-col min-h-screen mx-auto max-w-5xl px-4">
         <Navbar />
-        {children}
+        <main className="flex-grow">{children}</main>
         <Footer />
       </main>
     </>

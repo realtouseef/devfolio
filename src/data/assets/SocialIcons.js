@@ -18,22 +18,14 @@ const icons = {
   mail: Mail,
 };
 
-export const SocialIcons = ({
-  kind,
-  href,
-  size = 32,
-  color = "text-pink-500",
-}) => {
+export const SocialIcons = ({ kind, href, size = 28 }) => {
   if (!href) return null;
 
   const IconSvg = icons[kind];
 
   return (
     <a target="_blank" rel="noopener noreferrer" href={href}>
-      <IconSvg
-        style={{ width: size, height: size }}
-        className={`fill-current ${color} hover:text-button-light-color `}
-      />
+      <IconSvg style={{ width: size, height: size }} />
     </a>
   );
 };

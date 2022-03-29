@@ -21,9 +21,8 @@ const Navbar = () => {
         {NavItems.map(({ href, title }) => (
           <Link
             key={title}
+            target={`${href.includes("https" || "http") ? "_blank" : ""}`}
             href={href}
-            target="_blank"
-            rel="noopener noreferrer"
             className={`${
               href.includes("https" || "http")
                 ? "outlinedBtn"
