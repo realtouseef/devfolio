@@ -6,7 +6,7 @@ A minimal and easy-to-tweak portfolio for developers made with [TailwindCSS](htt
 
 ## Live Version
 
-This page is not yet deployed.
+Check out the Live Version here: [https://devpholio.vercel.app](https://devpholio.vercel.app).
 
 ## Table of Contents
 
