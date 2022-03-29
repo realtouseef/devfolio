@@ -26,6 +26,7 @@ This page is not yet deployed.
 - Add your custom colors to `tailwind.config.js` and `src/styles/globals.css`
   PS: don't change the color names, if you want to then change them at other places as well
 - Import your favorite font from `fonts.google.com` in `src/styles/globals.css`
+- Add `.env` file in root and copy paste this: `NEXT_PUBLIC_GH_REPO_ENDPOINT=https://api.github.com/users/{your-username}/repos` but make sure to use your GitHub username.
 
 ## For Contribution
 
