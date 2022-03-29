@@ -2,7 +2,7 @@ import Layout from "../components/Layout/Layout";
 import { useState, useEffect } from "react";
 import Star from "../data/assets/site-icons/star.svg";
 
-const projects = () => {
+const Projects = () => {
   const [GithubProjects, setGithubProjects] = useState([]);
 
   useEffect(() => {
@@ -71,4 +71,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;
