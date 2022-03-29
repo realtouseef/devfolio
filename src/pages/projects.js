@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Star from "../data/assets/site-icons/star.svg";
 
 const projects = () => {
-  const [projects, setProjects] = useState([]);
+  const [GithubProjects, setGithubProjects] = useState([]);
 
   useEffect(() => {
     async function fetchFromGitHub() {
@@ -11,19 +11,19 @@ const projects = () => {
         `${process.env.NEXT_PUBLIC_GH_REPO_ENDPOINT}`
       );
       const data = await response.json();
-      setProjects(data);
+      setGithubProjects(data);
     }
 
     fetchFromGitHub();
-  }, [setProjects]);
+  }, [setGithubProjects]);
 
   return (
     <Layout>
       <h1 className="border-b-2 text-3xl font-bold">
-        Projects: <span className="font-medium">{projects.length}</span>
+        Projects: <span className="font-medium">{GithubProjects.length}</span>
       </h1>
-      {projects &&
-        projects.map(
+      {GithubProjects &&
+        GithubProjects.map(
           ({
             id,
             html_url,
@@ -37,6 +37,7 @@ const projects = () => {
               <main key={id} className="mx-auto my-4 max-w-xl">
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href={html_url}
                   className="flex rounded-lg border-2 py-4 px-8 hover:border-button-light-color"
                 >

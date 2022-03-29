@@ -34,12 +34,12 @@ const ProfileCard = () => {
             </p>
           </div>
           <p className="text-base">
-            Touseef is a frontend developer specializing in React.js, NextJS,
+            {`Touseef is a frontend developer specializing in React.js, NextJS,
             Tailwindcss, and SCSS. His abilities go beyond just coding as he's a
             quick learner and has a large appetite for knowledge. He has good
             leadership skills and great communication skills as well. His role
             is to write and style the front-end components that meet the
-            requirements of our mocks and fulfill our user stories.
+            requirements of our mocks and fulfill our user stories.`}
           </p>
         </article>
       </center>

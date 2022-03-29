@@ -8,7 +8,7 @@ const MobileNav = () => {
         <Link
           key={title}
           href={href}
-          target="_blank"
+          target={`${href.includes("https" || "http") ? "_blank" : ""}`}
           rel="noopener noreferrer"
           className={"text-3xl uppercase tracking-wider"}
         >
