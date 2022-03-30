@@ -71,7 +71,7 @@ yarn dev
 - Design inspired from - [CodeWithAhsan](https://github.com/AhsanAyaz/code-with-ahsan)
 
 ## LICENSE
-DevFolio is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+DevFolio is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
 
 ## 🙏 Support
