@@ -1,5 +1,5 @@
 const siteMetaData = {
-  title: "DevFolio",
+  title: "DevFolio | Portfolio Template for Devs.",
   description: "For Developers, By a Developer",
   author: "Touseef",
   authorBio: "23, Jr. Software Engineer, Open-source Enthusiast",
