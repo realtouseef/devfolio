@@ -24,10 +24,10 @@ const Navbar = () => {
         {NavItems.map(({ href, title }) => (
           <Link
             key={title}
-            target={`${href.startsWith("https" || "http") ? "_blank" : ""}`}
+            target={`${href.includes("https" || "http") ? "_blank" : ""}`}
             href={href}
             className={`${
-              href.startsWith("https" || "http")
+              href.includes("https" || "http")
                 ? "outlinedBtn"
                 : "mr-6 last:mr-0 hover:text-button-light-color"
             }`}
