@@ -42,7 +42,11 @@ const Projects = ({ data }) => {
                     className="space-y-2"
                   >
                     <a className="text-xl font-bold tracking-wide">{name}</a>
-                    <p>{description}</p>
+                    <p>
+                      {description
+                        ? description
+                        : "No description was added to this repo."}
+                    </p>
                     <p className="text-muted-light-color">
                       Made with:{" "}
                       <span className="font-medium text-text-light-color">
