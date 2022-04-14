@@ -1,30 +1,25 @@
 import Layout from "../components/Layout/Layout";
-import { useState, useEffect } from "react";
 import Star from "../data/assets/site-icons/star.svg";
 
-const Projects = () => {
-  const [GithubProjects, setGithubProjects] = useState([]);
+export async function getStaticProps() {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_GH_REPO_ENDPOINT}`);
+  const data = await res.json();
+  return {
+    props: {
+      data,
+    },
+  };
+}
 
-  useEffect(() => {
-    async function fetchFromGitHub() {
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_GH_REPO_ENDPOINT}`
-      );
-      const data = await response.json();
-      setGithubProjects(data);
-    }
-
-    fetchFromGitHub();
-  }, [setGithubProjects]);
-
+const Projects = ({ data }) => {
   return (
     <Layout>
       <h1 className="mb-4 border-b-2 text-3xl font-bold">
-        Projects: <span className="font-medium">{GithubProjects.length}</span>
+        Projects: <span className="font-medium">{data.length}</span>
       </h1>
       <center className="my-10 grid max-w-5xl grid-cols-1 gap-4 md:grid-cols-2">
-        {GithubProjects &&
-          GithubProjects.map(
+        {data &&
+          data.map(
             ({
               id,
               html_url,
