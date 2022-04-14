@@ -17,7 +17,7 @@ const Footer = () => {
 
   return (
     <footer className="my-4 space-y-5 text-center tracking-wider">
-      <main className="flex items-center justify-center space-x-5 ">
+      <main className="flex items-center justify-center space-x-3">
         <SocialIcons href={upwork} kind="upwork" />
         <SocialIcons href={facebook} kind="facebook" />
         <SocialIcons href={youtube} kind="youtube" />
@@ -27,7 +27,7 @@ const Footer = () => {
         <SocialIcons href={github} kind="github" />
         <SocialIcons href={`mailto:${email}`} kind="mail" />
       </main>
-      <article className="flex items-center justify-center space-x-4 text-sm font-medium text-muted-light-color">
+      <article className="flex items-center justify-center space-x-4 text-xs font-medium text-muted-light-color">
         <aside>{author}</aside>
         <div>{` • `}</div>
         <div>{`© ${new Date().getFullYear()}`}</div>

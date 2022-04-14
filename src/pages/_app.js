@@ -3,8 +3,13 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import * as ga from "../lib/ga";
+import siteMetaData from "../../src/data/siteMetaData";
+
+// TODO: make the favicon work
+import Favicon from "../../public/favicon.ico";
 
 function MyApp({ Component, pageProps }) {
+  const { title, description, language } = siteMetaData;
   const router = useRouter();
 
   useEffect(() => {
@@ -21,27 +26,17 @@ function MyApp({ Component, pageProps }) {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router.events]);
+
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href="../../public/images/favicon.ico" />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="../../public/images/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="../../public/images/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="../../public/images/favicon-16x16.png"
-        />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta name="language" content={language} />
+        {/* TODO: make the favicon work */}
+        <link rel="icon" type="image/x-icon" href={Favicon} />
       </Head>
       <Component {...pageProps} />
     </>

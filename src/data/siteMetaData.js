@@ -2,6 +2,7 @@ const siteMetaData = {
   title: "DevFolio",
   description: "For Developers, By a Developer",
   author: "Touseef",
+  authorBio: "23, Jr. Software Engineer, Open-source Enthusiast",
   headerTitle: "DevFolio",
   language: "en-us",
   siteUrl: "",
@@ -15,6 +16,8 @@ const siteMetaData = {
   twitch: "",
   upwork: "https://www.upwork.com/freelancers/~013c6a875bcebb5f00",
   locale: "en-Us",
+  location: "Peshawar, Pakistan",
+  openToOpportunity: "Yes",
 };
 
 export default siteMetaData;

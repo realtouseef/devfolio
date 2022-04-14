@@ -18,7 +18,7 @@ const icons = {
   mail: Mail,
 };
 
-export const SocialIcons = ({ kind, href, size = 28 }) => {
+export const SocialIcons = ({ kind, href, size = 20 }) => {
   if (!href) return null;
 
   const IconSvg = icons[kind];
