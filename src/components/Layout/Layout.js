@@ -11,8 +11,9 @@ const Layout = ({ children }) => {
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="language" content={language} />
+        <link rel="favicon" href="../../../public/favicon.ico" />
       </Head>
-      <main className="flex flex-col min-h-screen mx-auto max-w-5xl px-4">
+      <main className="mx-auto flex min-h-screen max-w-5xl flex-col px-4">
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />

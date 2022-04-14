@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-
+import Head from "next/head";
 import * as ga from "../lib/ga";
 
 function MyApp({ Component, pageProps }) {
@@ -21,7 +21,31 @@ function MyApp({ Component, pageProps }) {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router.events]);
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Head>
+        <link rel="shortcut icon" href="../../public/images/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="../../public/images/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="../../public/images/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="../../public/images/favicon-16x16.png"
+        />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 export default MyApp;

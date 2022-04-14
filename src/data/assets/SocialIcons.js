@@ -25,7 +25,10 @@ export const SocialIcons = ({ kind, href, size = 28 }) => {
 
   return (
     <a target="_blank" rel="noopener noreferrer" href={href}>
-      <IconSvg style={{ width: size, height: size }} />
+      <IconSvg
+        className="hover:fill-pink-500"
+        style={{ width: size, height: size }}
+      />
     </a>
   );
 };

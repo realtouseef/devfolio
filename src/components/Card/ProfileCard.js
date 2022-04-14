@@ -24,16 +24,16 @@ const ProfileCard = () => {
             </h4>
           </div>
           <div className="flex items-center ">
-            <p className="btn mr-2 flex items-center bg-white text-text-light-color hover:bg-[#f7f2f2]">
-              <GitHub width="20" height="20" />
+            <p className="btn mr-2 flex items-center bg-slate-400 text-white text-text-light-color hover:rounded-xl">
+              <GitHub className="fill-white" width="20" height="20" />
               <span className="ml-3">GitHub</span>
             </p>
-            <p className="btn flex items-center bg-[#5592df] hover:bg-[#2869b9]">
+            <p className="btn flex items-center bg-[#5592df] hover:rounded-xl">
               <Linkedin className="fill-white" width="20" height="20" />
               <span className="ml-3">LinkedIn</span>
             </p>
           </div>
-          <p className="text-base">
+          <p className="text-base text-text-light-color">
             {`Touseef is a frontend developer specializing in React.js, NextJS,
             Tailwindcss, and SCSS. His abilities go beyond just coding as he's a
             quick learner and has a large appetite for knowledge. He has good

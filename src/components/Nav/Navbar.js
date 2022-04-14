@@ -4,6 +4,7 @@ import MobileNav from "./MobileNav";
 import Link from "../../data/custom/customLink";
 import Equals from "../../data/assets/site-icons/equals.svg";
 import Cross from "../../data/assets/site-icons/cross.svg";
+import Logo from "../../../public/favicon.svg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,20 +14,22 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="sticky top-0 z-50 mb-8 flex h-16 items-center justify-between bg-primary-light-color font-semibold tracking-wide md:h-24">
+    <nav className="sticky top-0 z-50 mb-8 flex h-20 items-center justify-between bg-primary-light-color text-lg font-medium tracking-wide md:h-24">
       <Link href="/">
-        <a className="hover:text-button-light-color">DevFolio</a>
+        <a className="hover:text-button-light-color">
+          <Logo className="my-2" />
+        </a>
       </Link>
       <center className="hidden md:flex md:items-center md:justify-center">
         {NavItems.map(({ href, title }) => (
           <Link
             key={title}
-            target={`${href.includes("https" || "http") ? "_blank" : ""}`}
+            target={`${href.startsWith("https" || "http") ? "_blank" : ""}`}
             href={href}
             className={`${
-              href.includes("https" || "http")
+              href.startsWith("https" || "http")
                 ? "outlinedBtn"
-                : "mr-3 last:mr-0 hover:text-button-light-color"
+                : "mr-6 last:mr-0 hover:text-button-light-color"
             }`}
           >
             {title}

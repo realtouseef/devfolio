@@ -19,29 +19,32 @@ const Projects = () => {
 
   return (
     <Layout>
-      <h1 className="border-b-2 text-3xl font-bold">
+      <h1 className="mb-4 border-b-2 text-3xl font-bold">
         Projects: <span className="font-medium">{GithubProjects.length}</span>
       </h1>
-      {GithubProjects &&
-        GithubProjects.map(
-          ({
-            id,
-            html_url,
-            name,
-            description,
-            stargazers_count,
-            language,
-            fork,
-          }) => {
-            return (
-              <main key={id} className="mx-auto my-4 max-w-xl">
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={html_url}
-                  className="flex rounded-lg border-2 py-4 px-8 hover:border-button-light-color"
+      <center className="my-10 grid max-w-5xl grid-cols-1 gap-4 md:grid-cols-2">
+        {GithubProjects &&
+          GithubProjects.map(
+            ({
+              id,
+              html_url,
+              name,
+              description,
+              stargazers_count,
+              language,
+              fork,
+            }) => {
+              return (
+                <main
+                  key={id}
+                  className="rounded-lg border-2 py-4 px-8 text-left hover:border-button-light-color"
                 >
-                  <div className="space-y-2">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={html_url}
+                    className="space-y-2"
+                  >
                     <a className="text-xl font-bold tracking-wide">{name}</a>
                     <p>{description}</p>
                     <p className="text-muted-light-color">
@@ -61,12 +64,12 @@ const Projects = () => {
                         {fork ? "forked" : ""}
                       </p>
                     </div>
-                  </div>
-                </a>
-              </main>
-            );
-          }
-        )}
+                  </a>
+                </main>
+              );
+            }
+          )}
+      </center>
     </Layout>
   );
 };
