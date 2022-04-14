@@ -9,10 +9,6 @@ import Logo from "../../../public/favicon.svg";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  function handleHamburgerChange() {
-    setIsOpen(!isOpen);
-  }
-
   return (
     <nav className="sticky top-0 z-50 mb-8 flex h-20 items-center justify-between bg-primary-light-color text-lg font-medium tracking-wide md:h-24">
       <Link href="/">
@@ -36,7 +32,7 @@ const Navbar = () => {
           </Link>
         ))}
       </center>
-      <button className="z-30 md:hidden" onClick={handleHamburgerChange}>
+      <button className="z-30 md:hidden" onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <Cross width="16" /> : <Equals width="24" />}
       </button>
       {isOpen && <MobileNav />}
