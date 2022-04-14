@@ -5,9 +5,6 @@ import Head from "next/head";
 import * as ga from "../lib/ga";
 import siteMetaData from "../../src/data/siteMetaData";
 
-// TODO: make the favicon work
-import Favicon from "../../public/favicon.ico";
-
 function MyApp({ Component, pageProps }) {
   const { title, description, language } = siteMetaData;
   const router = useRouter();
@@ -35,8 +32,6 @@ function MyApp({ Component, pageProps }) {
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="language" content={language} />
-        {/* TODO: make the favicon work */}
-        <link rel="icon" type="image/x-icon" href={Favicon} />
       </Head>
       <Component {...pageProps} />
     </>
