@@ -16,6 +16,7 @@ Check out the Live Version here: [https://devpholio.vercel.app](https://devpholi
 - [Technologies Used](#technologies-used)
 - [Fonts And Icons](#font-and-icons)
 - [Inspired from](#inspired-from)
+- [License](#license)
 - [Support](#-support)
 
 ## Add your Info
@@ -68,6 +69,10 @@ yarn dev
 - Idea inspired from - [DeveloperFolio](https://github.com/saadpasta/developerFolio)
 
 - Design inspired from - [CodeWithAhsan](https://github.com/AhsanAyaz/code-with-ahsan)
+
+## LICENSE
+DevFolio is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
+
 
 ## 🙏 Support
 
