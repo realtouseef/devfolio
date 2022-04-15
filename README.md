@@ -28,6 +28,7 @@ Check out the Live Version here: [https://devpholio.vercel.app](https://devpholi
   PS: don't change the color names, if you want to then change them at other places as well
 - Import your favorite font from `fonts.google.com` in `src/styles/globals.css`
 - Add `.env` file in root and copy paste this: `NEXT_PUBLIC_GH_REPO_ENDPOINT=https://api.github.com/users/{your-username}/repos` but make sure to use your GitHub username.
+- For fetching articles from medium, create a variable in your `.env` called `NEXT_PUBLIC_MEDIUM_API_ENDPOINT` and assign it `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@your-username` but make sure to add your username at the end
 
 ## For Contribution
 
@@ -71,8 +72,8 @@ yarn dev
 - Design inspired from - [CodeWithAhsan](https://github.com/AhsanAyaz/code-with-ahsan)
 
 ## LICENSE
-DevFolio is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
+DevFolio is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
 ## 🙏 Support
 

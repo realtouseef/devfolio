@@ -11,10 +11,10 @@ const contact = () => {
       <main className="mt-10 w-full md:flex md:items-center md:justify-center">
         <article className="w-full space-y-5 font-medium md:w-1/2">
           <div>
-            <h1 className="mb-1 text-2xl tracking-wide  md:text-4xl">
+            <h1 className="mb-1 text-2xl tracking-wide  md:text-3xl">
               Reach Out to me!
             </h1>
-            <p className="text-sm uppercase text-text-light-color md:text-base">
+            <p className="text-sm uppercase text-text-light-color">
               discuss a project or just want to say Hi, my inbox is open for
               everyone 😁
             </p>

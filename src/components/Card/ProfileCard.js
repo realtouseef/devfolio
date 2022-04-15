@@ -1,16 +1,16 @@
-import Image from "../../data/custom/customImage";
-import Touseef from "../../data/assets/images/touseef.jpg";
 import Linkedin from "../../data/assets/social/linkedin.svg";
 import GitHub from "../../data/assets/social/github.svg";
 // import Link from "../../data/custom/AnchorLink";
+import siteMetaData from "../../data/siteMetaData";
 
 const ProfileCard = () => {
+  const { author, authorBio, longAuthorBio, cardImage } = siteMetaData;
   return (
     <main className="mb-10">
       <center className="mx-auto w-96 overflow-hidden rounded-lg bg-secondary-light-color md:mx-0 md:flex md:h-96 md:w-full md:items-center md:justify-center md:text-left">
         <figure className="md:w-[350px]">
-          <Image
-            src={Touseef}
+          <img
+            src={cardImage}
             alt="me"
             className="rounded-t-lg object-cover md:rounded-none md:rounded-l-lg"
             loading="lazy"
@@ -18,9 +18,11 @@ const ProfileCard = () => {
         </figure>
         <article className="sm:py-5 space-y-4 px-4 py-4 text-left text-lg font-medium leading-relaxed tracking-wide md:w-2/3 md:py-0 md:px-8 md:leading-none">
           <div>
-            <h2 className="mb-2 text-2xl font-bold">Touseef ibn Khaleel</h2>
+            <h2 className="mb-2 text-2xl font-bold text-text-light-color">
+              {author}
+            </h2>
             <h4 className="text-sm text-muted-light-color md:text-base">
-              Jr. React Engineer, Open source Enthusiast
+              {authorBio}
             </h4>
           </div>
           <div className="flex items-center ">
@@ -33,14 +35,7 @@ const ProfileCard = () => {
               <span className="ml-3">LinkedIn</span>
             </p>
           </div>
-          <p className="text-base text-text-light-color">
-            {`Touseef is a frontend developer specializing in React.js, NextJS,
-            Tailwindcss, and SCSS. His abilities go beyond just coding as he's a
-            quick learner and has a large appetite for knowledge. He has good
-            leadership skills and great communication skills as well. His role
-            is to write and style the front-end components that meet the
-            requirements of our mocks and fulfill our user stories.`}
-          </p>
+          <p className="text-base text-text-light-color">{longAuthorBio}</p>
         </article>
       </center>
     </main>

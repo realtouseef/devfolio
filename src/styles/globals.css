@@ -5,16 +5,15 @@
 @tailwind utilities;
 
 :root {
+  /* light mode color pallete  */
   --primary-light-color: #fff;
   --secondary-light-color: #f1f1f1;
   --button-light-color: #6366f1;
   --button-light-hover-color: #3134d4;
   --text-light-color: #404040;
   --muted-light-color: #a2a2a2;
-}
 
-* {
-  font-family: "Poppins", sans-serif;
+  /* dark mode color pallete  */
 }
 
 @layer components {
@@ -25,4 +24,12 @@
   .outlinedBtn {
     @apply mr-3 rounded-lg p-4 text-sm tracking-wider outline-button-light-color ring-2 transition-all duration-200 hover:bg-button-light-color hover:text-white hover:outline-none hover:ring-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-button-light-color focus-visible:ring-offset-2;
   }
+
+  .subtle-bg {
+    @apply rounded-full p-2 transition-all duration-200 hover:bg-gray-200;
+  }
+}
+
+* {
+  font-family: "Poppins", sans-serif;
 }

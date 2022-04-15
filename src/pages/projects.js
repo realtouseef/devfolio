@@ -15,7 +15,7 @@ export async function getStaticProps() {
 const Projects = ({ data }) => {
   return (
     <Layout>
-      <h1 className="mb-4 border-b-2 text-3xl font-bold">
+      <h1 className="mb-4 border-b-2 text-lg font-medium">
         Projects: <span className="font-medium">{data.length}</span>
       </h1>
       <center className="my-10 grid max-w-5xl grid-cols-1 gap-4 md:grid-cols-2">
@@ -41,8 +41,10 @@ const Projects = ({ data }) => {
                     href={html_url}
                     className="space-y-2"
                   >
-                    <a className="text-xl font-bold tracking-wide">{name}</a>
-                    <p>
+                    <a className="text-lg font-semibold tracking-wide">
+                      {name}
+                    </a>
+                    <p className="text-sm leading-relaxed">
                       {description
                         ? description
                         : "No description was added to this repo."}
